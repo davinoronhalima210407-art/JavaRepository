@@ -1,21 +1,23 @@
-import java.util.Locale;
-import java.util.Scanner;
-
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        // Funções de String
 
-        Scanner sc = new Scanner(System.in);
-        Locale.setDefault(Locale.US);
+        String original = "Bom dia homem! como você está homem?";
 
-        ExtremamenteBasico numero = new ExtremamenteBasico();
-
-        numero.n1 = sc.nextInt();
-        numero.n2 = sc.nextInt();
-
-        numero.soma();
-
-        System.out.printf("X = %d%n", numero.soma);
-
-            }
+        String s1 = original.toLowerCase();
+        String s2 = original.toUpperCase();
+        String s3 = original.trim();
+        String s4 = original.substring(4,14);
+        String s5 = original.replace("homem","mulher");
+        int s6 = original.indexOf("como");
+        
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+        System.out.println(s4);
+        System.out.println(s5);
+        System.out.println(s6);
+    }
 }
